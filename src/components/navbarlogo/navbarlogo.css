@@ -1,13 +1,38 @@
-#myLinks {
+  #navbarlogo {
+    margin: 1rem 0 4rem 0;
+  }
+
+
+  .logo-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  nav {
+    text-decoration: none;
+    background: black;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .icon {
+    color: black;
    
   }
 
 
 
-#navbarlogo nav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: black;
+  .logo {
+    display: inline-block;
   }
+
+  li a:link {color:#FFFAFA;}    
+  li a:visited {color:#FFFAFA;}
+
+  li {
+    padding: 1rem;
+  }
+
+  

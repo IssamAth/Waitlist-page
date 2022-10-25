@@ -18,8 +18,13 @@ function myFunction() {
 const navbarlogo = () => {
   return (
     <div id='navbarlogo'>
-      <div>
-        <img src={logo} alt="" /> 
+      <div className="logo-menu">
+        <div className='logo'>
+          <img src={logo} alt="" /> 
+        </div>
+        <a href="#" class="icon" onClick={myFunction}>
+            <GiHamburgerMenu size = '28'/>
+        </a>
       </div>
       <nav class="topnav">
         <ul id="myLinks">
@@ -29,9 +34,6 @@ const navbarlogo = () => {
           <li><a href="#">Communities</a></li>
           <li><a href="#">Join Waitlist</a></li>
         </ul>
-        <a href="#" class="icon" onClick={myFunction}>
-          <GiHamburgerMenu />
-        </a>
       </nav>
     </div>
   )       
