@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --color-bg: #f6f9fe;
+    --color-primary: #545454;
+    --color-primary-variant: #353252;
+    --color-white: #372865;
+
+    --transition: all 400ms ease; /* all properties in hover - 400ms duration - east means it starts slow goes fast then ends slow */
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Bungee', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}  
+
+.container {
+    margin: 0.5rem 0.5rem;
+    height: 100%;
+    background: var(--color-bg);
+    border-radius: 1rem;
 }
