@@ -5,6 +5,14 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
 
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 
 const navbarlogo = () => {
@@ -21,12 +29,12 @@ const navbarlogo = () => {
           <li><a href="#">Communities</a></li>
           <li><a href="#">Join Waitlist</a></li>
         </ul>
-        <a href="javascript:void(0);" class="icon">
+        <a href="#" class="icon" onClick={myFunction}>
           <GiHamburgerMenu />
         </a>
       </nav>
     </div>
-  )
+  )       
 }
 
 export default navbarlogo
