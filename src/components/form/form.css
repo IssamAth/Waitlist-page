@@ -7,7 +7,38 @@ input {
 
 .form-sec {
     columns: 2rem;
-    
+    margin: 1rem 0;
 }
+
+form #email {
+    margin-bottom: 1rem;
+    border: 1px solid #e3e3e3;
+    font-size: 1em;
+    font-weight: normal;
+    border-radius: 0.3rem;
+    padding: 1.1rem 1rem;
+}
+
+form #submit {
+    border: none;
+    border-radius: 0.4rem;
+    background: var(--color-btn);
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 300;
+    padding: 1.1rem 1rem;
+}
+
+
+::placeholder {
+    color: #b6b7b7;
+    opacity: 1; /* Firefox */
+  }
+
+
+  
+
+
+
 
 /* we were fixing the inputs and aligning them */

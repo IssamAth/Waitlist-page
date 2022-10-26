@@ -29,4 +29,5 @@ p {
     color: var(--color-primary);
     font-weight:400;
     font-size: 0.96em;
+    line-height: 1.6rem;
 }
