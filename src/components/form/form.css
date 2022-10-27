@@ -1,13 +1,17 @@
 input {
     box-sizing: border-box;
     padding: 1.5rem;
-    width: 20rem;
-    margin: 0 auto;
+    width: 94%;
+    display: block;
 }
 
 .form-sec {
-    columns: 2rem;
     margin: 1rem 0;
+}
+
+form {
+   
+  
 }
 
 form #email {
@@ -17,6 +21,7 @@ form #email {
     font-weight: normal;
     border-radius: 0.3rem;
     padding: 1.1rem 1rem;
+    margin: 0 auto;
 }
 
 form #submit {
@@ -27,13 +32,42 @@ form #submit {
     font-size: 1.05rem;
     font-weight: 300;
     padding: 1.1rem 1rem;
+    margin: 1rem auto 0 auto;
 }
+
 
 
 ::placeholder {
     color: #b6b7b7;
     opacity: 1; /* Firefox */
   }
+ 
+
+
+  /* MEDIA QUERIES ================ ( desktops ) ================ */
+
+@media screen and (min-width: 1024px) {}
+  
+
+/* MEDIA QUERIES ================ ( tablets devices ) ================ */
+
+@media screen and (min-width: 600px) {
+
+    form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    form #submit {
+        width: 25%;
+        margin: 0 auto;
+        
+    }
+    form #email {
+       width: 65%;
+    }
+
+}
 
 
   
@@ -41,4 +75,3 @@ form #submit {
 
 
 
-/* we were fixing the inputs and aligning them */

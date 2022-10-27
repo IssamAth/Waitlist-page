@@ -31,3 +31,21 @@ p {
     font-size: 0.96em;
     line-height: 1.6rem;
 }
+
+
+/* MEDIA QUERIES ================ ( tablets devices ) ================ */
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 3.1rem;
+    }
+
+    p {
+      font-size: 0.99em;
+    }
+
+    h4 {
+        max-width: 43rem;
+        margin: 0 auto;
+    }
+}

@@ -39,3 +39,20 @@ html {
     background: var(--color-bg);
     border-radius: 0.8rem;
 }
+
+
+
+
+
+
+/* MEDIA QUERIES ================ ( tablets devices ) ================ */
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: var(--container-width-md);
+        padding-left: 8%;
+        padding-right: 8%;
+        margin: 0 auto;
+
+    }
+}
