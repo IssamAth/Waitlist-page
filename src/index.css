@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600&display=swap');
 
+
 * { padding: 0;
     margin: 0;
     border: 0;
@@ -18,7 +19,7 @@
     --transition: all 400ms ease; /* all properties in hover - 400ms duration - east means it starts slow goes fast then ends slow */
 
     --container-width-lg: 75%;
-    --container-width-md: 86%;
+    --container-width-md: 97%;
     --container-width-sm: 90%;
 }
 
@@ -33,6 +34,7 @@ html {
 }  
 
 .container {
+    height: 100vh;
     margin: 1rem 1rem;
     padding: 6%;
     height: 100%;
@@ -50,9 +52,10 @@ html {
 @media screen and (min-width: 600px) {
     .container {
         width: var(--container-width-md);
+        height: 100vh;
         padding-left: 8%;
         padding-right: 8%;
-        margin: 0 auto;
+        margin: 1rem auto;
 
     }
 }
