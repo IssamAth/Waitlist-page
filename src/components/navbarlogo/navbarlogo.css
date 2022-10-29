@@ -42,3 +42,44 @@
   }
 
   
+
+
+
+  /* MEDIA QUERIES ================ ( For Mobiles ) ================ */
+
+@media screen and (min-width: 1024px) {
+
+  #myLinks {
+      display: flex;
+  }
+
+  nav {
+    margin: 0;
+    background: var(--color-bg);
+   
+  }
+
+  li a:link {color:var(--color-primary);}    
+  li a:visited {color:var(--color-primary);}
+
+  .icon {
+    display: none;
+  }
+
+  #navbarlogo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topnav #myLinks {
+     display: flex;
+  }
+
+  .topnav {
+   
+  }
+
+  #navbarlogo {
+   
+  }
+}
