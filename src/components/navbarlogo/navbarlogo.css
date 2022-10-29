@@ -1,65 +1,82 @@
-  
-  #myLinks {
-    display: none;
-  }
-  
-  
-  #navbarlogo {
-    margin: 1rem 0 4rem 0;
-  }
+/* .mylinks{
+  display: block;
+} */
+
+.topnav{
+  display: block;
+}
+
+.topnavhide{
+  display: none;
+}
+
+#navbarlogo {
+  margin: 1rem 0 4rem 0;
+}
 
 
-  .logo-menu {
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-
-  nav {
-    text-decoration: none;
-    background: black;
-    border-radius: 0.5rem;
-    margin: 1rem 0;
-  }
-
-  .icon {
-    color: black;
-   
-  }
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
-  .logo {
-    display: inline-block;
-  }
+nav {
+  text-decoration: none;
+  background: black;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
 
-  li a:link {color:#FFFAFA;}    
-  li a:visited {color:#FFFAFA;}
+.icon {
+  color: black;
 
-  li {
-    padding: 1rem;
-  }
+}
 
-  
+.logo {
+  display: inline-block;
+}
+
+li a:link {color:#FFFAFA;}    
+li a:visited {color:#FFFAFA;}
+
+li {
+  padding: 1rem;
+}
 
 
 
-  /* MEDIA QUERIES ================ ( For Mobiles ) ================ */
+
+
+
+/* MEDIA QUERIES ================ ( For desktops ) ================ */
+
+
 
 @media screen and (min-width: 1024px) {
 
-  #myLinks {
-      display: flex;
+  #newclass {
+    display: block;
+  }
+
+  .mylinks{
+    display: flex;
   }
 
   nav {
     margin: 0;
     background: var(--color-bg);
+    width: 100%;
+
+  }
+
+  nav ul {
+    display: flex;
    
   }
 
-  li a:link {color:var(--color-primary);}    
+  li a:link {color:var(--color-primary);}
   li a:visited {color:var(--color-primary);}
 
   .icon {
@@ -71,15 +88,15 @@
     justify-content: space-between;
   }
 
-  .topnav #myLinks {
-     display: flex;
+  .topnav{
+    display: block;
+  }
+  .topnavhide{
+    display: block;
   }
 
-  .topnav {
-   
-  }
 
-  #navbarlogo {
-   
-  }
+   li {
+    display: inline-block;
+ }
 }
