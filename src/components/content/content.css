@@ -1,3 +1,6 @@
+.image {
+    display: none;
+}
 
 .content {
     text-align: center;
@@ -48,4 +51,61 @@ p {
         max-width: 43rem;
         margin: 0 auto;
     }
+    .image {
+        display: none;
+    }
 }
+
+
+
+/* MEDIA QUERIES ================ ( For desktops ) ================ */
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .content {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        'one four'
+        'two four'
+        'three .';
+    }
+    }
+
+    .image {
+        display: inline-block;
+        grid-column: 2 / span 2;
+        grid-area: four; 
+    }
+
+    .image img {
+        width: 25rem;
+        height: 28rem;
+    }
+
+    h1 {
+        padding: 2rem 0rem 1rem 0rem;
+        text-align: start;
+        grid-column: 1 / span 1;
+        grid-area: two; 
+        /* font-size: 3.1rem; */
+    }
+
+    p {
+        text-align: start;
+        grid-column: 1 / span 1;
+        grid-area: three; 
+      /* font-size: 0.99em; */
+    }
+
+    h4 {
+        margin: 0;
+        grid-column: 1 / span 1;
+        text-align: start;
+        width: 33rem;
+        padding: 0.6rem 1rem 0.6rem 1rem;
+        grid-area: one; 
+       
+    }
