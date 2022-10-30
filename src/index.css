@@ -59,3 +59,19 @@ html {
 
     }
 }
+
+
+
+
+/* MEDIA QUERIES ================ ( For desktops ) ================ */
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        padding-top: 2%;
+        margin: 1rem 1rem;
+    }
+
+}

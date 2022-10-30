@@ -12,12 +12,21 @@ const Navbarlogo = () => {
 
   function testing(displayTopNav){
     if ((displayTopNav  === true) && (vw < 1024)) {
+      displayTopNav  = false;
       return "topnav";
     }  if ((displayTopNav === false) && (vw < 1024)) {
+      displayTopNav  = true;
       return "topnavhide";
     } else if ((displayTopNav === true) && (vw >= 1024)) {
+      displayTopNav = true;
+      return "newclass";
+    } else if ((displayTopNav === false) && (vw >= 1024)) {
+      displayTopNav = true;
       return "newclass";
     }
+
+    console.log("just to prove u wrong")
+    displayTopNav = false;
     
   }
 
@@ -37,7 +46,7 @@ const Navbarlogo = () => {
             <li><a href="#">Affiliates</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Communities</a></li>
-            <li><a href="#">Join Waitlist</a></li>
+            <li className='join-list'><a href="#">Join Waitlist</a></li>
           </ul>
         </nav>
     </div>

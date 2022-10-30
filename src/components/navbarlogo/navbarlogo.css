@@ -73,11 +73,24 @@ li {
 
   nav ul {
     display: flex;
-   
+    justify-content: end;
   }
 
   li a:link {color:var(--color-primary);}
   li a:visited {color:var(--color-primary);}
+  li {
+    font-size: 1.12rem;
+  }
+
+  ul .join-list {
+    background: var(--color-btn);
+    border-radius: 6%;
+    margin-left: 1rem;
+    padding: 1.2rem 1.7rem 1.2rem 1.7rem;
+  }
+
+  .join-list a:link {color:white;}
+  .join-list a:visited {color:white;}
 
   .icon {
     display: none;
@@ -85,7 +98,8 @@ li {
 
   #navbarlogo {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-top: 0;
   }
 
   .topnav{
