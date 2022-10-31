@@ -26,6 +26,7 @@ h1 {
     font-size: 2em;
     padding: 2rem 1rem 1rem 1rem;
     text-align: center;
+    color: var(--color-primary-variant);
 }
 
 p {
@@ -66,17 +67,16 @@ p {
 
     .content {
         display: grid;
-        grid-template-columns: auto auto;
         grid-template-areas:
         'one four'
         'two four'
         'three .';
+        margin-top: 0;
     }
-    }
+    
 
     .image {
         display: inline-block;
-        grid-column: 2 / span 2;
         grid-area: four; 
     }
 
@@ -86,26 +86,30 @@ p {
     }
 
     h1 {
-        padding: 2rem 0rem 1rem 0rem;
+        /* margin-bottom: 8rem; */
+        padding: 2rem 10rem 1rem 0rem;
+        font-size: 3.5rem;
         text-align: start;
-        grid-column: 1 / span 1;
         grid-area: two; 
         /* font-size: 3.1rem; */
     }
 
     p {
         text-align: start;
-        grid-column: 1 / span 1;
         grid-area: three; 
+        font-size: 1.1rem;
+        padding-right: 20rem;
       /* font-size: 0.99em; */
     }
 
     h4 {
         margin: 0;
-        grid-column: 1 / span 1;
+        margin-top: 4rem;
         text-align: start;
-        width: 33rem;
+        height: 3.2rem;
+        width: 34rem;
         padding: 0.6rem 1rem 0.6rem 1rem;
         grid-area: one; 
        
     }
+}

@@ -18,7 +18,7 @@ const Navbarlogo = () => {
       displayTopNav  = true;
       return "topnavhide";
     } else if ((displayTopNav === true) && (vw >= 1024)) {
-      displayTopNav = true;
+      displayTopNav = false;
       return "newclass";
     } else if ((displayTopNav === false) && (vw >= 1024)) {
       displayTopNav = true;
@@ -27,7 +27,6 @@ const Navbarlogo = () => {
 
     console.log("just to prove u wrong")
     displayTopNav = false;
-    
   }
 
   return (

@@ -3,6 +3,14 @@ import './content.css'
 import Illustration from '../../assets/Illustration.png'
 
 const Content = () => {
+  function choseClass(){
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    if(vw >= 1024) {
+      return "show-class";
+    } else {
+      return "hide-class"
+    }
+  }
   return (
     <section className='content'>
       <h4>We are now allowing early-access for users. <a className='learn'>Learn more.</a></h4>
