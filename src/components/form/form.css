@@ -70,6 +70,40 @@ form #submit {
 }
 
 
+
+/* MEDIA QUERIES ================ ( For desktops ) ================ */
+
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .form-sec {
+        margin-top: 0;
+        width: 42%;
+    }
+
+    form {
+        
+       
+    }
+    form #email {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.1rem;
+        padding: 1.4rem 1.2rem 1.4rem 1.2rem;
+    }
+    form #submit {
+        margin-left: 1rem;
+        font-size: 1.1rem;
+    }
+
+
+
+
+}
+
+
   
 
 

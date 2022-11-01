@@ -10,3 +10,26 @@ footer .image-container img {
     height: 2.7rem;
     width: 2.7rem;
 }
+
+
+
+
+/* MEDIA QUERIES ================ ( For desktops ) ================ */
+
+
+
+@media screen and (min-width: 1024px) {
+    
+    footer {
+        margin-top: 7rem;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer .image-container img {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+}
