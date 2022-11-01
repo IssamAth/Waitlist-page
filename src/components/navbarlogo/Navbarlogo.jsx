@@ -4,13 +4,13 @@ import logo from '../../assets/Logo.svg'
 import {GiHamburgerMenu} from 'react-icons/gi'
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
 
 const Navbarlogo = () => {
   const [displayTopNav, setDisplayTopNav] = useState(false)
-  console.log(vw);
 
   function testing(displayTopNav){
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     if ((displayTopNav  === true) && (vw < 1024)) {
       console.log("menu shown");
       return "topnav";
