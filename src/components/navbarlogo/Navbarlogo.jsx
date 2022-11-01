@@ -19,10 +19,10 @@ const Navbarlogo = () => {
       return "topnavhide";
     } else if ((displayTopNav === true) && (vw >= 1024)) {
       console.log("menu showns2");
-      return "newclass";
+      return "topnavhide";
     } else if ((displayTopNav === false) && (vw >= 1024)) {
       console.log("vp is big");
-      return "newclass";
+      return "topnavhide";
     }
 
     console.log("just to prove u wrong")
