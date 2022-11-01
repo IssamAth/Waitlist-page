@@ -80,12 +80,14 @@ form #submit {
 
     .form-sec {
         margin-top: 0;
-        width: 42%;
+        width: 48%;
+        position: relative;
+        bottom: 3rem;
     }
 
     form {
         
-       
+      
     }
     form #email {
         margin-left: 0;
@@ -94,18 +96,41 @@ form #submit {
         padding: 1.4rem 1.2rem 1.4rem 1.2rem;
     }
     form #submit {
+        width: 27%;
         margin-left: 1rem;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
-
-
-
 
 }
 
 
   
+/* MEDIA QUERIES ================ ( For bigger desktops desktops ) ================ */
 
+
+
+@media screen and (min-width: 1085px) {
+
+    .form-sec {
+        bottom: 0.1rem;
+    }
+
+}
+
+
+
+/* MEDIA QUERIES ================ ( For wide dektops desktops desktops ) ================ */
+
+
+
+@media screen and (min-width: 1603px) {
+
+
+    .form-sec {
+        bottom: 1rem;
+    }
+
+}
 
 
 

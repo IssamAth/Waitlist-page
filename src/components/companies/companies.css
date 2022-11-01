@@ -1,6 +1,5 @@
 footer h5 {
     margin-top: 1.8rem;
-    margin-bottom: 1rem;
     font-size: 0.9rem;
 }
 
@@ -21,7 +20,8 @@ footer .image-container img {
 @media screen and (min-width: 1024px) {
     
     footer {
-        margin-top: 7rem;
+      
+       margin-bottom: 3rem;
     }
 
     footer h5 {

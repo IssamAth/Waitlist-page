@@ -12,16 +12,12 @@ const Navbarlogo = () => {
 
   function testing(displayTopNav){
     if ((displayTopNav  === true) && (vw < 1024)) {
-      displayTopNav  = false;
       return "topnav";
     }  if ((displayTopNav === false) && (vw < 1024)) {
-      displayTopNav  = true;
       return "topnavhide";
     } else if ((displayTopNav === true) && (vw >= 1024)) {
-      displayTopNav = false;
       return "newclass";
     } else if ((displayTopNav === false) && (vw >= 1024)) {
-      displayTopNav = true;
       return "newclass";
     }
 
