@@ -12,17 +12,20 @@ const Navbarlogo = () => {
 
   function testing(displayTopNav){
     if ((displayTopNav  === true) && (vw < 1024)) {
+      console.log("menu shown");
       return "topnav";
     }  if ((displayTopNav === false) && (vw < 1024)) {
+      console.log("menu hidden");
       return "topnavhide";
     } else if ((displayTopNav === true) && (vw >= 1024)) {
+      console.log("menu showns2");
       return "newclass";
     } else if ((displayTopNav === false) && (vw >= 1024)) {
+      console.log("vp is big");
       return "newclass";
     }
 
     console.log("just to prove u wrong")
-    displayTopNav = false;
   }
 
   return (
